@@ -87,14 +87,16 @@
         <!-- FULLSCREEN SLIDER -->
         <div id="slides">
             <ul class="slides-container">
+                {% for banner in [ 'candy', 'main', 'ham', 'sea-food', 'flowers'] %}
                 <li>
-                	<img style="opacity: 0.8;" src2="img/case-studies-img/banner.jpg" src="img/main.jpg" alt="">
+                	<img style="opacity: 0.8;" src="img/{{banner}}.jpg" alt="">
                     <div class="container text-center">
                         <h1 class="uppercase">{{title}}</h1>
 						<p class="lead">Exchanging data for public good through collaboration</p>
                         {# <a class="button button-big button-border-light" href="#">buy now</a> #}
                     </div>
             	</li>
+                {% endfor %}
             </ul>
         </div>
         
