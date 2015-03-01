@@ -6,16 +6,23 @@ CASES = []
 with open('case-studies.csv', 'rb') as csvfile:
 	spamreader = csv.reader(csvfile)
 	for row in spamreader:
-		(region,location,sector,provider,status,example_name,mechanism,
-			third_party_user,user_details,data_category,data_source,data_source_type,has_PII,
-			data_fomrat,time_frame_size,number_of_consumers,has_PII_shared,anonymization_details,
-			use_category,use_subcategories,used_data_type,use_details,legal_dimensions,description,reference) = row
-		CASES.append({ 'sharedBy': provider,
-			'forUse': data_category,
+		(region, location, sector, sharedBy, status, title, typeOfActivity,
+			thirdPartyUser, sharedWith, dataCategory, dataSource, dataSourceType,
+			hasPiiInOriginalData, formatOfDataShared, timeframeSizeOfDataset, 
+			numberOfConsumers, hasPiiInSharedFormat, anonymizationDetails, dataFor, 
+			useSubCategories, usedDataType, useDetails, legalDimensions, imageFilename, 
+			textForWriteup, reference) = row
+		CASES.append({ 'sharedBy': sharedBy,
+			'sharedWith': sharedWith,
+			'sector': sector,
+			'forUse': dataCategory,
+			'img': imageFilename,
 			'status': status,
-			'description': description,
+			'description': textForWriteup,
 			'link': reference,
-			'typeOfActivity': mechanism,
-			'name': example_name})
+			'typeOfActivity': typeOfActivity,
+			'location': location,
+			'userDetails': useDetails,
+			'name': title})
 
 print yaml.dump(CASES, default_flow_style=False).replace('!!python/str ', '')
