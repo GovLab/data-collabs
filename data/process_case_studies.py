@@ -14,6 +14,7 @@ with open('case-studies.csv', 'rb') as csvfile:
 			textForWriteup, reference) = row
 		CASES.append({ 'sharedBy': sharedBy,
 			'sharedWith': sharedWith,
+			'region': region,
 			'sector': sector,
 			'forUse': dataCategory,
 			'img': imageFilename,

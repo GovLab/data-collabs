@@ -8,7 +8,7 @@ from jinja2 import Environment, FileSystemLoader
 
 TEMPLATES_DIR = 'templates'
 
-CASE_STUDIES = yaml.load(open('data/case-studies.yaml'))
+CASE_STUDIES = yaml.load(open('data/case-studies.yaml'))[1:]
 
 mySlug = lambda x:slugify(x, separator='_', to_lower=True)
 
@@ -18,9 +18,9 @@ activityFilters = {}
 statusFilters = {}
 for case in CASE_STUDIES:
 	case['slug'] = mySlug(case['name'])
-	case['tags'] = map( lambda x:mySlug(case[x]), ['sector', 'location', 'typeOfActivity', 'status'])
+	case['tags'] = map( lambda x:mySlug(case[x]), ['sector', 'region', 'typeOfActivity', 'status'])
 	industryFilters[case['sector']] = mySlug(case['sector'])
-	regionFilters[case['location']] = mySlug(case['location'])
+	regionFilters[case['region']] = mySlug(case['region'])
 	activityFilters[case['typeOfActivity']] = mySlug(case['typeOfActivity'])
 	statusFilters[case['status']] = mySlug(case['status'])
 

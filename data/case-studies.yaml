@@ -1,3 +1,16 @@
+- description: Text for Writeup
+  forUse: Data Category
+  img: Image FileName
+  link: Reference
+  location: Location
+  name: Title
+  region: Region
+  sector: Sector
+  sharedBy: Shared by
+  sharedWith: Shared with
+  status: Status
+  typeOfActivity: Type of Activity
+  userDetails: Use Details
 - description: 'Namibia National Vector-borne Diseases Control
 
     Programme (NVDCP) used mobile phone data from MTC Namibia, in combination with
@@ -8,6 +21,7 @@
   link: http://www.malariajournal.com/content/pdf/1475-2875-13-52.pdf
   location: International
   name: MTC (Namibia)
+  region: Africa & the Middle East
   sector: Resilience
   sharedBy: MTC (Namibia)
   sharedWith: Namibia National Vector-borne Diseases Control Programme (NVDCP)
@@ -23,6 +37,7 @@
   link: http://www.d4d.orange.com/en/home
   location: International
   name: Orange Telecom Data for Development Challenge
+  region: Africa & the Middle East
   sector: Resilience
   sharedBy: Orange Telecom
   sharedWith: Academic researchers
@@ -43,6 +58,7 @@
   link: http://www.cgap.org/blog/can-voice-corridors-be-used-predict-mobile-money-hotspots
   location: International
   name: MTN Data for Good
+  region: Africa & the Middle East
   sector: Telecommunications
   sharedBy: MTN Group
   sharedWith: CGAP, UN Global Pulse, UNMEER, other international development organizations
@@ -59,6 +75,7 @@
   link: http://www.hsph.harvard.edu/news/press-releases/cell-phone-data-malaria/
   location: International
   name: Safaricom-Harvard Research Collaboration
+  region: Africa & the Middle East
   sector: Telecommunications
   sharedBy: Safaricom
   sharedWith: Harvard Graduate School for Public Health
@@ -78,6 +95,7 @@
   link: http://www.research.ibm.com/labs/africa/index.shtml
   location: ''
   name: IBM Africa Research Lab
+  region: Africa & the Middle East
   sector: Resilience
   sharedBy: IBM Research
   sharedWith: Businesses, research organizations and nonprofits
@@ -95,6 +113,7 @@
   link: http://www.ehs.unu.edu/article/read/press-note-new-project-uses-mobile-data-to-understand-climate
   location: International
   name: Mobile Data, Environmental Extremes and Population (MDEEP) Project
+  region: Asia
   sector: Resilience
   sharedBy: Grameenphone (Telecom)
   sharedWith: Telenor Group, UNU, Flowminder, ICCCAD
@@ -111,6 +130,7 @@
   link: https://www.centrodeinnovacionbbva.com/en/opentalent; https://developers.bbva.com/web/bbva-open-platform/innova-challenge-2014-mx
   location: International
   name: BBVA's Innova Challenge
+  region: Europe
   sector: Finance
   sharedBy: BBVA
   sharedWith: Participating developers
@@ -129,6 +149,7 @@
   link: http://www.telecomitalia.com/tit/en/bigdatachallenge.html
   location: International
   name: Telecom Italia's Big Data Challenge
+  region: Europe
   sector: Telecommunications
   sharedBy: Telecom Italia
   sharedWith: University researchers, developers and designers
@@ -150,6 +171,7 @@
   link: http://www.ddmcd.com/display/ShowImage?imageUrl=/storage/NOAAbigdata_infograph.jpg?__SQUARESPACE_CACHEVERSION=1415385346791
   location: US
   name: NOAA Big Data Partnership Initiative
+  region: North America
   sector: Climate & Environment
   sharedBy: NOAA, with corporate partners
   sharedWith: Weather industry companies, small and medium enterprises, researchers
@@ -172,6 +194,7 @@
   link: http://www.climate.com
   location: US
   name: The Climate Corporation's Total Weather Insurance Products
+  region: North America
   sector: Climate & Environment
   sharedBy: The Climate Corporation
   sharedWith: Government agencies
@@ -187,6 +210,7 @@
   link: http://clever.com
   location: US
   name: Clever
+  region: North America
   sector: Education
   sharedBy: Clever
   sharedWith: School administrators, teachers, education technology developers
@@ -206,6 +230,7 @@
   link: http://bits.blogs.nytimes.com/2014/04/21/inbloom-student-data-repository-to-close/?_r=0
   location: US
   name: InBloom
+  region: North America
   sector: Education
   sharedBy: InBloom
   sharedWith: School administrators, teachers, education technology developers
@@ -228,6 +253,7 @@
   link: http://www.pearsonschoolsystems.com/blog/?p=2242#sthash.rabZ2Og5.mW2EbAP0.dpbs
   location: US
   name: Pearson's PowerSchool Independent Software Vendors (ISV) Partner program
+  region: North America
   sector: Education
   sharedBy: Pearson
   sharedWith: School administrators, teachers, education technology developers
@@ -252,6 +278,7 @@
   link: http://www.niams.nih.gov/Funding/Funded_Research/AMP_RA_Lupus/default.asp
   location: US
   name: NIH Accelerating Medicines Partnership
+  region: North America
   sector: Health
   sharedBy: AbbVie, Biogen Idec, Bristol-Myers Squibb, GlaxoSmithKline, Johnson &
     Johnson, Lilly, Merck, Pfizer, Sanofi, Takeda
@@ -268,6 +295,7 @@
   link: https://www.clinicalstudydatarequest.com/Default.aspx
   location: US
   name: Clinical Study Data Request Program
+  region: North America
   sector: Health
   sharedBy: Astellas, Bayer, Boehringer Ingelheim, GSK, Lilly, Novartis, Roche, Sanofi,
     Takeda, UCB and ViiV Healthcare.
@@ -287,6 +315,7 @@
   link: http://www.fiercebiotech.com/story/jj-enlists-yale-oversee-clinical-trials-data-sharing/2014-01-30
   location: US
   name: Johnson & Johnson-Yale Open Data Access Project
+  region: North America
   sector: Health
   sharedBy: Johnson & Johnson
   sharedWith: Yale Open Data Access Project, Yale School of Medicine
@@ -313,6 +342,7 @@
   link: http://grants.nih.gov/grants/guide/rfa-files/RFA-LM-15-001.html#sthash.9IWj4kcw.dpuf
   location: US
   name: NIH Big Data to Knowledge (BD2K)
+  region: North America
   sector: Health
   sharedBy: NIH, with biomedical research organizations
   sharedWith: Academic researchers
@@ -332,6 +362,7 @@
   link: http://www.nih.gov/precisionmedicine/
   location: US
   name: NIH Precision Medicine Initative
+  region: North America
   sector: Health
   sharedBy: NIH, with pharmeceutical partners
   sharedWith: Academic researchers
@@ -350,6 +381,7 @@
   link: http://news.patientslikeme.com/press-release/genentech-and-patientslikeme-enter-patient-centric-research-collaboration
   location: ''
   name: PatientsLikeMe-Genentech Research Collaboration
+  region: North America
   sector: Health
   sharedBy: PatientsLikeMe
   sharedWith: Genentech Research
@@ -367,6 +399,7 @@
   link: http://www.massdevice.com/news/philips-mit-collaborate-critical-care-data-project
   location: US
   name: Philips-MIT Hospital to Home eICU Tele-Health Program
+  region: North America
   sector: Health
   sharedBy: Philips
   sharedWith: MIT's Laboratory of Computational Physiology
@@ -385,6 +418,7 @@
   link: http://wyofile.com/gregory_nickerson/wyoming-businesses-seek-pool-data-lower-healthcare-costs/
   location: US
   name: Wyoming Business Coalition on Health
+  region: North America
   sector: Health
   sharedBy: Wyoming Business Coalition on Health
   sharedWith: Private, public entities
@@ -401,6 +435,7 @@
   link: http://spacenews.com/42589earth-science-and-climate-monitoring-skybox-for-good-initiative-combines/#sthash.DhvcknWr.dpuf
   location: ''
   name: Skybox for Good
+  region: North America
   sector: Remote Sensing
   sharedBy: Skybox
   sharedWith: Harvard Humanitarian Initative's Signal Program, HALO Trust
@@ -418,6 +453,7 @@
   link: ''
   location: ''
   name: Climate Impact Data Platform
+  region: North America
   sector: Resilience
   sharedBy: HabitatSeven, Quandl
   sharedWith: Private sector clients
@@ -433,6 +469,7 @@
   link: http://www.techrepublic.com/article/how-intel-is-using-iot-and-big-data-to-improve-food-and-water-security/
   location: US
   name: Intel-Earth Research Institute Partnership
+  region: North America
   sector: Resilience
   sharedBy: Intel
   sharedWith: Earth Research Institute at the University of California at Santa Barbara
@@ -446,7 +483,8 @@
   link: http://www.google.org/flutrends/us/
   location: US
   name: Google Flu Trends
-  sector: Reslience
+  region: North America
+  sector: Resilience
   sharedBy: Google
   sharedWith: Centers for Disease Control
   status: Ongoing
@@ -462,6 +500,7 @@
   link: http://derp.institute/
   location: US
   name: Digital Ecologies Research Partnership
+  region: North America
   sector: Technology
   sharedBy: Imgur, Reddit, FARK, Stack Exchange, Twitch, and DeviantArt
   sharedWith: Academic researchers
@@ -477,6 +516,7 @@
   link: https://blog.twitter.com/2014/introducing-twitter-data-grants
   location: Global
   name: Twitter's Academic Data Grants
+  region: North America
   sector: Technology
   sharedBy: Twitter
   sharedWith: Researchers from selected institutions
@@ -491,6 +531,7 @@
   link: http://socialmachines.media.mit.edu/
   location: US
   name: Twitter-MIT Lab for Social Machines
+  region: North America
   sector: Technology
   sharedBy: Twitter
   sharedWith: MIT Lab for Social Machines
@@ -509,6 +550,7 @@
   link: http://www.ncbi.nlm.nih.gov/pubmed/21918643
   location: International
   name: Digicel Telecom, Karolinska, and Columbia University Partnership
+  region: North America
   sector: Telecommunications
   sharedBy: Digicel Telecom (Haiti)
   sharedWith: Karolinska Institute and Columbia University
@@ -523,6 +565,7 @@
   link: http://blog.uber.com/city-data
   location: US
   name: Uber-City of Boston Partnership
+  region: North America
   sector: Transportation
   sharedBy: Uber
   sharedWith: Selected partners
@@ -538,6 +581,7 @@
   link: http://blog.digital.telefonica.com/2013/09/24/tech-social-good-data-epidemic/
   location: International
   name: Telefonica Digital's Smart Steps
+  region: Central & South America
   sector: Telecommunications
   sharedBy: Telefonica Digital (Mexico)
   sharedWith: Local government agencies
@@ -554,6 +598,7 @@
   link: http://complianceservices.swift.com/kyc-registry
   location: ''
   name: SWIFT Know Your Customer (KYC) Registry
+  region: Worldwide
   sector: Finance
   sharedBy: SWIFT
   sharedWith: Financial administrators
@@ -576,6 +621,7 @@
   link: http://mediacenter.23andme.com/blog/2015/01/06/23andme-genentech-pd/
   location: Global
   name: 23andMe Patient-Centric Research Portal
+  region: Worldwide
   sector: Health
   sharedBy: 23andMe
   sharedWith: Academic researchers
@@ -596,6 +642,7 @@
   link: http://propellerhealth.com
   location: ''
   name: PropellerHealth
+  region: Worldwide
   sector: Health
   sharedBy: PropellerHealth
   sharedWith: Physicians, patients
@@ -613,6 +660,7 @@
   link: http://www.businessweek.com/articles/2014-02-13/satellite-imaging-startups-skybox-planet-labs-race-to-cover-earth
   location: Global
   name: Planet.org
+  region: Worldwide
   sector: Remote Sensing
   sharedBy: Planet Labs
   sharedWith: Selected partners
@@ -633,6 +681,7 @@
   link: ''
   location: Global
   name: Global Fishing Watch
+  region: Worldwide
   sector: Resilience
   sharedBy: Google, Oceana, Skytruth
   sharedWith: Public
@@ -649,6 +698,7 @@
   link: http://www.forbes.com/sites/parmyolson/2014/07/07/why-google-waze-helps-local-governments-track-its-users/
   location: Global
   name: Google Waze
+  region: Worldwide
   sector: Technology
   sharedBy: Google
   sharedWith: Local government agencies
@@ -664,6 +714,7 @@
   link: http://www.yelp.com/dataset_challenge
   location: Global
   name: Yelp Dataset Challenge
+  region: Worldwide
   sector: Technology
   sharedBy: Yelp
   sharedWith: Academic researchers
@@ -682,6 +733,7 @@
   link: https://www.yelp.com/academic_dataset
   location: US
   name: Yelp Academic Dataset
+  region: Worldwide
   sector: Technology
   sharedBy: Yelp
   sharedWith: Researchers from selected institutions
@@ -700,6 +752,7 @@
   link: http://www.forbes.com/sites/parmyolson/2014/07/07/why-google-waze-helps-local-governments-track-its-users/
   location: Global
   name: Strava Metro
+  region: Worldwide
   sector: Transportation
   sharedBy: Strava
   sharedWith: Local government agencies
