@@ -86,7 +86,8 @@ jQuery(document).ready(function($) {
 	(function ($, window, document, undefined) {
 
     var gridContainer = $('#grid-container'),
-        filtersContainer = $('#filters-container');
+        //filtersContainer = $('#filters-container');
+        filtersContainer = $('.filters-container');
 
 	// init cubeportfolio
     gridContainer.cubeportfolio({
@@ -171,8 +172,15 @@ jQuery(document).ready(function($) {
         }
 
         // filter the items
-        gridContainer.cubeportfolio('filter', me.data('filter'), function () {});
-
+        var filters = $('.cbp-filter-item-active').map( function() { return $(this).data('filter'); }).toArray().join('');
+        //filters = filters.replace('*.','.').replace('.*.','.').replace('.*', '').replace('**', '*');
+        if (filters == '*****') {
+            filters = '*';
+        } else {
+            filters = filters.replace(/\*{1,}/g, '');
+        }
+        console.log(filters);
+        gridContainer.cubeportfolio('filter', filters, function () {});
     });
 
     // activate counters

@@ -74,6 +74,7 @@
               <ul class="nav navbar-nav navbar-right uppercase">
                 <li><a data-scroll href="#nav">Home</a></li>
 				<li><a data-scroll href="#about">About</a></li>
+                <li><a data-scroll href="#explore">Explore</a></li>
 				<li><a data-scroll href="#tools">Tools</a></li>
 				<li><a data-scroll href="#case-studies">Case Studies</a></li>
 				<li><a data-scroll href="#contact">Contact</a></li>
@@ -87,7 +88,7 @@
         <div id="slides">
             <ul class="slides-container">
                 <li>
-                	<img style="opacity: 0.8;" src="img/main.jpg" alt="">
+                	<img style="opacity: 0.8;" src2="img/case-studies-img/banner.jpg" src="img/main.jpg" alt="">
                     <div class="container text-center">
                         <h1 class="uppercase">{{title}}</h1>
 						<p class="lead">Exchanging data for public good through collaboration</p>
@@ -274,12 +275,84 @@
         </section>
 #}      
 
-        <!-- MILESTONE -->
+ 
+
+        <!-- SECTION PROCESS -->
+        <section id="explore">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 wow fadeInDown">
+                        <h2 class="uppercase">Explore by sector</h2>
+                        <p class="subhead">Data X Collaboration is an effort to ...</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
+                        <i class="pe-7s-umbrella pe-4x"></i>
+                        <h3 class="uppercase">Climate, Environment &amp; Energy</h3>
+                    </div>
+                    
+                    <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s">
+                        <i class="pe-7s-study pe-4x"></i>
+                        <h3 class="uppercase">Education</h3>
+                    </div>
+                    
+                    <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.4s">
+                        <i class="pe-7s-piggy pe-4x"></i>
+                        <h3 class="uppercase">Finance</h3>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
+                        <i class="pe-7s-like pe-4x"></i>
+                        <h3 class="uppercase">Health &amp; Healthcare</h3>
+                    </div>
+                    
+                    <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s">
+                        <i class="pe-7s-airplay pe-4x"></i>
+                        <h3 class="uppercase">Media, IT &amp; Communications</h3>
+                    </div>
+                    
+                    <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.4s">
+                        <i class="pe-7s-signal pe-4x"></i>
+                        <h3 class="uppercase">Remote Sensing &amp; Satellites</h3>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
+                        <i class="pe-7s-plane pe-4x"></i>
+                        <h3 class="uppercase">Transportation & Hospitality</h3>
+                    </div>
+                    
+                    <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s">
+                        <i class="pe-7s-plugin pe-4x"></i>
+                        <h3 class="uppercase">Technology &amp; Social Media</h3>
+                    </div>
+                    
+                    <div class="col-xs-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.4s">
+                        <i class="pe-7s-light pe-4x"></i>
+                        <h3 class="uppercase">Telecommunications</h3>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+
+       <!-- MILESTONE -->
         <div id="milestone">
             <div class="milestone wow flipInY">
                 <div class="container">
                     <div class="row text-center">
-                    	
+                        
                         <div class="col-lg-10 col-lg-offset-1">
                             <div class="col-xs-6 col-md-4 col-lg-4">
                                 <p class="timer" data-to="{{total_case_studies}}" data-speed="10000"></p>
@@ -304,7 +377,8 @@
                 </div>
             </div>
         </div>
-        
+
+
         <!-- SECTION PROCESS -->
         <section id="tools">
         	<div class="container">
@@ -437,26 +511,31 @@
                     	<h2 class="uppercase">Case Studies</h2>
                     </div>
                 	<div class="wrapper">
+
+{% macro filterWidget(filterName) -%}
+    <div style="margin-bottom: 0;" id="filters-container" class="filters-container cbp-l-filters-button">
+        <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
+        {% for k,v in filterName|dictsort %}
+            <div style="margin-top: 0; font-size: 18px; line-height: 18px;" data-filter=".{{v}}" class="cbp-filter-item">{{k}}</div>
+        {% endfor %}
+    </div>
+{%- endmacro %}
 						
                         <!-- PORTOLIO FILTER -->
-                        <div id="filters-container" class="cbp-l-filters-button text-center">
-                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
-                            <div data-filter=".identity" class="cbp-filter-item">Health</div>
-                            <div data-filter=".web-design" class="cbp-filter-item">Energy</div>
-                            <div data-filter=".graphic" class="cbp-filter-item">Tech</div>
-                            <div data-filter=".logo" class="cbp-filter-item">Education</div>
-                            <div data-filter=".logo" class="cbp-filter-item">Finance</div>
-                        </div>
-            			
+                        {{ filterWidget(industryFilters) }}
+                        {{ filterWidget(regionFilters) }}
+                        {{ filterWidget(activityFilters) }}
+                        {{ filterWidget(statusFilters) }}
+                                    			
                         <!-- PORTOLIO -->
-                        <div id="grid-container" class="cbp-l-grid-projects ">
+                        <div style="margin-top: 30px;" id="grid-container" class="cbp-l-grid-projects ">
                             <ul>
                                 {% for case in CASE_STUDIES %}
 
-                                <li class="cbp-item graphic">
+                                <li class="cbp-item {{case['tags']|join(' ')}}">
                                     <div class="cbp-caption">
                                         <div class="cbp-caption-defaultWrap">
-                                            <img src="img/1.jpg" alt="" width="100%">
+                                            <img src="img/case-studies-img/{{case.img if case.img != None else '1.jpg'}}" alt="" width="100%">
                                         </div>
                                         <div class="cbp-caption-activeWrap">
                                             <div class="cbp-l-caption-alignCenter">
@@ -470,7 +549,6 @@
                                         </div>
                                     </div>
                                     <div class="cbp-l-grid-projects-title">{{case.name}}</div>
-                                    <div class="cbp-l-grid-projects-desc">{{case.description}}</div>
                                 </li>
                                 {% endfor %}
 

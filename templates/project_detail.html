@@ -2,22 +2,35 @@
 <div class="cbp-l-project-subtitle">{{subtitle}}</div>
 
 <div class="cbp-l-project-container">
-	<div class="cbp-l-project-desc">
-	    <div class="cbp-l-project-desc-title"><span>Project Description</span></div>
-	    <div class="cbp-l-project-desc-text">{{description}}</div>
-	</div>
-	<div class="cbp-l-project-details">
-		<div class="cbp-l-project-details-title"><span>Project Details</span></div>
+
+	<div class="cbp-l-project-desc-title"><span>{{name}}</span></div>
+
+	<div style="width: 50%;" class="cbp-l-project-details">
+		<div class="cbp-l-project-details-title"><span>Details</span></div>
 
 		<ul class="cbp-l-project-details-list">
-			<li><strong>Data Provider</strong> {{sharedBy}}</li>
+			<li><strong>Shared by</strong> {{sharedBy}}</li>
+			<li><strong>Shared with</strong> {{sharedWith}}</li>
+			<li><strong>For</strong> {{forUse}}</li>
+			<li><strong>Region</strong> {{location}}</li>
+			<li><strong>Type of Activity</strong> {{typeOfActivity}}</li>
 			<li><strong>Status</strong> {{status}}</li>
-			<li><strong>Categories</strong> TBD</li>
+
 		</ul>
 		<a href="{{link}}" target="_blank" class="cbp-l-project-details-visit">visit the site</a>
 	</div>
+
+	<div style="width: 50%;" class="cbp-l-project-desc">
+			<div style="min-height:300px;">
+				<img width="460" src="img/case-studies-img/{{img if img != None else '1.jpg'}}" alt="" width="100%">
+			</div>
+	    <div style="margin-top: 50px;" class="cbp-l-project-desc-title"><span>Description</span></div>
+	    <div class="cbp-l-project-desc-text">{{description}}</div>
+	</div>
+
 </div>
 
+{#
 <div class="cbp-slider">
 	<ul class="cbp-slider-wrap">
 		<li class="cbp-slider-item">
@@ -31,6 +44,7 @@
 		</li>
 	</ul>
 </div>
+#}
 
 <div class="cbp-l-project-container">
 	<div class="cbp-l-project-related">

@@ -7,14 +7,31 @@ from jinja2 import Environment, FileSystemLoader
 
 
 TEMPLATES_DIR = 'templates'
+
 CASE_STUDIES = yaml.load(open('data/case-studies.yaml'))
+
+mySlug = lambda x:slugify(x, separator='_', to_lower=True)
+
+industryFilters = {}
+regionFilters = {}
+activityFilters = {}
+statusFilters = {}
 for case in CASE_STUDIES:
-	case['slug'] = slugify(case['name'], to_lower=True)
+	case['slug'] = mySlug(case['name'])
+	case['tags'] = map( lambda x:mySlug(case[x]), ['sector', 'location', 'typeOfActivity', 'status'])
+	industryFilters[case['sector']] = mySlug(case['sector'])
+	regionFilters[case['location']] = mySlug(case['location'])
+	activityFilters[case['typeOfActivity']] = mySlug(case['typeOfActivity'])
+	statusFilters[case['status']] = mySlug(case['status'])
 
 template_data = {
 	'title': 'Data X Collaboration',
-	'CASE_STUDIES': CASE_STUDIES, 
-	'total_case_studies': len(CASE_STUDIES)
+	'CASE_STUDIES': sorted(CASE_STUDIES, key=lambda x:x['name']), 
+	'total_case_studies': len(CASE_STUDIES),
+	'industryFilters': industryFilters,
+	'regionFilters': regionFilters,
+	'activityFilters': activityFilters,
+	'statusFilters': statusFilters,
 }
 
 def Main():
