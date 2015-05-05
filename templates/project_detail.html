@@ -9,11 +9,11 @@
 		<div class="cbp-l-project-details-title"><span>Details</span></div>
 
 		<ul class="cbp-l-project-details-list">
-			<li><strong>Shared by</strong> {{sharedBy}}</li>
-			<li><strong>Shared with</strong> {{sharedWith}}</li>
-			<li><strong>For</strong> {{forUse}}</li>
+			<li><strong>Shared by</strong> {{sharedby}}</li>
+			<li><strong>Shared with</strong> {{sharedwith}}</li>
+			<li><strong>For</strong> {{purpose}}</li>
 			<li><strong>Region</strong> {{region}}</li>
-			<li><strong>Type of Activity</strong> {{typeOfActivity}}</li>
+			<li><strong>Type of Activity</strong> {{kindofSharing}}</li>
 			<li><strong>Status</strong> {{status}}</li>
 
 		</ul>
@@ -24,8 +24,21 @@
 			<div style="min-height:300px;">
 				<img width="460" src="img/case-studies-img/{{img if img != None else '1.jpg'}}" alt="" width="100%">
 			</div>
-	    <div style="margin-top: 50px;" class="cbp-l-project-desc-title"><span>Description</span></div>
-	    <div class="cbp-l-project-desc-text">{{description}}</div>
+	    <div style="margin-top: 50px;" class="cbp-l-project-desc-title"><span>Summary</span></div>
+	    <div class="cbp-l-project-desc-text">{{summary}}</div>
+
+	    <div style="margin-top: 50px;" class="cbp-l-project-desc-title"><span>Background</span></div>
+	    <div class="cbp-l-project-desc-text">{{background}}</div>
+
+	    <div style="margin-top: 50px;" class="cbp-l-project-desc-title"><span>Legal &amp; Governance Dimensions</span></div>
+	    <div class="cbp-l-project-desc-text">{{legalGovernance}}</div>
+
+	    <div style="margin-top: 50px;" class="cbp-l-project-desc-title"><span>Data Use &amp; Impact </span></div>
+	    <div class="cbp-l-project-desc-text">{{dataUseImpact}}</div>
+
+			<div style="margin-top: 50px;" class="cbp-l-project-desc-title"><span>Actors</span></div>
+	    <div class="cbp-l-project-desc-text">{{actors|join(' – ')}}</div>
+
 	</div>
 
 </div>
